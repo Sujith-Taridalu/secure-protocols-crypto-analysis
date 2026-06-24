@@ -1,0 +1,10 @@
+topic,observation,defensive_interpretation
+TLS,Handshake content type is distinct from application data,Record types help separate negotiation from encrypted payload flow
+TLS,Cipher suites are negotiated during session setup,Strong modern suites provide authenticated encryption properties
+TLS,Session random values change per session,Fresh randomness supports key derivation
+PKI,Certificate chains link site certificates to trusted roots,Trust depends on chain validation and revocation considerations
+IPSec,Sequence numbers support anti-replay checks,Receivers can reject duplicate or stale packets
+IPSec,Network-layer protection is transparent to applications,Applications usually do not need code changes
+Network,Traceroute may show timeouts,Timeouts can indicate filtering or non-responsive devices
+Network,Large unscoped scans create operational risk,Authorized and targeted scope is part of professional scanning hygiene
+Wireless,WEP uses weak legacy design,Modern WPA2/WPA3 configurations should replace WEP
