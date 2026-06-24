@@ -1,0 +1,17 @@
+area,concept,security_property,portfolio_takeaway
+Cryptography,Base64/Base58/Hex,Representation,Encoding changes format but does not provide secrecy
+Cryptography,Caesar/Vigenere/Rail Fence,Historical confidentiality,Classical ciphers demonstrate substitution and transposition limitations
+Cryptography,RSA,Asymmetric cryptography,Public/private keys support confidentiality and signatures when used safely
+Cryptography,Textbook RSA,Learning primitive,Determinism requires safe padding in real systems
+Cryptography,DES/3DES,Symmetric encryption,Repeated encryption must be analyzed beyond nominal key length
+Cryptography,ECB vs CBC,Block cipher modes,Mode selection affects visible data patterns
+Cryptography,MAC,Integrity and authentication,Shared-key MACs do not provide non-repudiation
+PKI,Certificate chain,Trust validation,Root and intermediate CAs establish browser trust
+PKI,CRL,Revocation checking,Revocation locations help verify certificate status
+TLS,Client Hello/Server Hello,Session negotiation,Handshake messages establish agreed parameters
+TLS,Cipher suite,Algorithm selection,Defines encryption and integrity properties
+IPSec,Security Association,Packet protection,One-way SAs protect network-layer traffic
+IPSec,Anti-replay window,Freshness,Sequence tracking helps reject stale packets
+Wireless,WEP,Legacy wireless security,Obsolete due to weak cryptographic design
+Network,Traceroute,Path interpretation,Missing hops can reflect filtering or non-response
+Network,DNS reflection,Availability risk,Resolver hardening and rate limiting reduce abuse
