@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="520" viewBox="0 0 1050 520" role="img" aria-label="TLS handshake flow">
+  <rect width="1050" height="520" fill="#ffffff"/>
+  <text x="525" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111827">TLS Handshake Flow</text>
+  <text x="525" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#4b5563">Sanitized view of certificate validation, cipher-suite negotiation, and encrypted application data</text>
+
+  <line x1="220" y1="120" x2="220" y2="450" stroke="#9ca3af" stroke-width="3"/>
+  <line x1="830" y1="120" x2="830" y2="450" stroke="#9ca3af" stroke-width="3"/>
+  <text x="220" y="105" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1f2937">Client</text>
+  <text x="830" y="105" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1f2937">Server</text>
+
+  <line x1="230" y1="150" x2="820" y2="150" stroke="#2563eb" stroke-width="3" marker-end="url(#arrowBlue)"/>
+  <text x="525" y="138" text-anchor="middle" font-family="Arial" font-size="15" fill="#1f2937">Client Hello: supported versions, random, cipher suites</text>
+
+  <line x1="820" y1="205" x2="230" y2="205" stroke="#059669" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <text x="525" y="193" text-anchor="middle" font-family="Arial" font-size="15" fill="#1f2937">Server Hello: selected parameters and key exchange data</text>
+
+  <line x1="820" y1="260" x2="230" y2="260" stroke="#059669" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <text x="525" y="248" text-anchor="middle" font-family="Arial" font-size="15" fill="#1f2937">Certificate: server identity validated through CA chain</text>
+
+  <line x1="230" y1="315" x2="820" y2="315" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrowPurple)"/>
+  <text x="525" y="303" text-anchor="middle" font-family="Arial" font-size="15" fill="#1f2937">Key confirmation and handshake completion</text>
+
+  <line x1="230" y1="375" x2="820" y2="375" stroke="#dc2626" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <line x1="820" y1="410" x2="230" y2="410" stroke="#dc2626" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <text x="525" y="362" text-anchor="middle" font-family="Arial" font-size="15" fill="#1f2937">Encrypted Application Data</text>
+
+  <rect x="285" y="455" width="480" height="38" rx="10" fill="#f9fafb" stroke="#d1d5db"/>
+  <text x="525" y="479" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Record types observed conceptually: Handshake, Change Cipher Spec, Application Data</text>
+
+  <defs>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/></marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#059669"/></marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#7c3aed"/></marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/></marker>
+  </defs>
+</svg>
